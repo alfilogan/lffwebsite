@@ -1,0 +1,286 @@
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 10;
+}
+
+body {
+    margin: 0;
+    font-family: "Ropa Sans", sans-serif;
+    color: seashell;
+    background-color: black;
+    font-size: 22px;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    height: 69px;
+    background-color: black;
+    border-bottom: 1px solid seashell;
+    align-items: center;
+  }
+  
+  header h4 {
+    padding-left: 40px;
+  }
+  
+  nav {
+    text-align: right;
+    flex-grow: 1;
+  }
+  
+  nav span {
+    display: inline-block;
+    padding: 20px 40px;
+  }
+
+  .main {
+    padding-top: 69px;
+    opacity: 0.9;
+    width: 1200px;
+    margin: auto;
+  }
+
+
+  #home {
+      height: 647px;
+      background-image: url(https://www.curzon.org.uk/wp-content/uploads/2018/10/chairs2-1920x647.jpg)
+  }
+
+  #home .content {
+    font-size: 3rem;
+    margin: auto;
+    padding: 233px 0;
+    background-color: darkred;
+    opacity: 0.7;
+  }
+
+  #home .content h4 {
+      width: 70%;
+      margin: auto;
+  }
+
+  #schedule {
+    height: 600px;
+    margin: auto;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  #schedule .scheduletag {
+    font-size: 3rem;
+    margin: auto;
+    background-color: black;
+    width: 100%; 
+
+  }
+
+  table {
+      width: 80%;      
+  }
+
+  th {
+      height: 30px;
+      background-color: darkred;
+  }
+
+  td {
+      background-color: rgba(192, 192, 192, 0.3)
+  }
+
+  th, td {
+      padding: 15px;
+      text-align: center;
+  }
+
+  #about {
+      height: 500px;
+      background-image: url(https://seward.coop/wp-content/uploads/Board-of-directors-meeting_blur-scaled.jpg)
+  }
+
+  .aboutcontent {
+    font-size: 1.5rem;
+    margin: auto;
+    padding: 40px 70px;
+
+    background-color: black;
+    opacity: 0.4;
+    width: 70%;
+  }
+
+  #contact {
+      height: 100px;
+      margin: auto;
+      padding-top: 70px;
+  }
+
+  footer {
+      text-align: left;
+      padding-left: 40px;
+  }
+
+  a {
+      text-decoration: none;
+      color: ghostwhite;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .main {
+        width: 80%;
+   
+    }
+    #home {
+        height: 300px; 
+        background-size: cover;
+ 
+    }
+    #home .content {
+        font-size: 1.3rem;
+        width: 100%;
+        padding: 105px;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .aboutcontent {
+
+        padding: 55px 130px;
+    }
+
+  }
+
+  @media only screen and (max-width: 800px) {
+      .main {
+          width: 70%;
+      }
+
+      #home .content {
+          font-size: 2rem;
+          padding: 81px;
+      }
+
+      #home {
+          height: 400px;
+      }
+      
+      #about {
+        height: 90%;
+      }
+
+      .aboutcontent {
+          font-size: 1rem;
+      }
+
+      nav {
+          text-align: center;
+      }
+
+      header h4 {
+          padding-left: 20px;
+          text-align: center;
+          padding-top: 10px;
+      }
+
+      nav span {
+          padding-top: 5px;
+      }
+  }
+           
+  @media only screen and (max-width: 600px) {
+      nav {
+          text-align: none;
+          font-size: 1rem;
+         
+      }
+      nav span {
+         padding: 10px 20px;
+      }
+
+      #home {
+          background-size: cover;
+          height: 300px;
+      }
+
+      #home .content {
+          font-size: 1.5rem;
+          padding: 48px;
+      }
+
+      schedule {
+          height: 300px;
+      }
+
+      table {
+          width: 80%;
+      }
+      th, td {
+        padding: 15px;
+        text-align: center;
+        font-size: 1rem;   
+    }
+    .aboutcontent {
+        padding: 20px 53px;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    nav {
+        text-align: none;
+        font-size: 0.7rem;
+       
+    }
+    nav span {
+       padding: 10px 20px;
+    }
+
+    #home {
+        background-size: cover;
+        height: 300px;
+    }
+
+    #home .content {
+        font-size: 1.2rem;
+        padding: 40px;
+    }
+
+    #schedule {
+        height: 200px;
+        margin: 30px 0;
+        padding-bottom: 90px;
+    }
+
+    #schedule .scheduletag {
+        font-size: 2rem;
+    }
+
+    table {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    th, td {
+      padding: 5px;
+      text-align: center;
+      font-size: 0.8rem;   
+  }
+
+  #about {
+    margin-top: 30px;
+  }
+  .aboutcontent {
+      
+      padding: 20px 33px;
+  }
+  }
